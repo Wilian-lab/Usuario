@@ -1,9 +1,6 @@
 package com.Wilian.Usuario.Infrastructure.entity;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
 
@@ -12,6 +9,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Builder
+
+
 @Table(name = "endereco")
 public class Endereco {
     @Id
@@ -31,6 +31,9 @@ public class Endereco {
 
     @Column(name = "estado" , length = 2)
     private String estado;
+
+    @Column(name = "cep" ,  length = 9 )
+    private String cep;
 
 
 

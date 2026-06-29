@@ -1,6 +1,6 @@
 package com.Wilian.Usuario.Infrastructure.repository;
 
-import com.Aprendendo_Java.Aprendendo_Java.Infrastructure.entity.Usuario;
+import com.Wilian.Usuario.Infrastructure.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
